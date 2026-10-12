@@ -10,16 +10,37 @@
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
-| Week 2 | Tier 1 | 1.72h | 1 |
+| Week 2 | Tier 1 | 2.72h | 1 |
 
 ## Contents
 
-1. [2026-10-12 – Work session](#2026-10-12-work-session)
+1. [2026-10-12 – I collected a bunch of reference images (source material, fan art, other 3d prints) of the hex core and analyzed them carefully to figure out the overall geometry. I wanted to figure out how it rotate](#2026-10-12-i-collected-a-bunch-of-reference-images-source-ma)
 
 ## Design
 
-### 2026-10-12 – Work session
+### 2026-10-12 – I collected a bunch of reference images (source material, fan art, other 3d prints) of the hex core and analyzed them carefully to figure out the overall geometry. I wanted to figure out how it rotate
 
-**1.72h**
+**2.72h**
+
+I collected a bunch of reference images (source material, fan art, other 3d prints) of the hex core and analyzed them carefully to figure out the overall geometry. I wanted to figure out how it rotates so smoothly and naturally in the show. Turns out, its essentially just a 3x3 Rubik's cube with custom cubelets (the little cubes the cube is made of).
+
+My plan is to get a Rubik's cube as part of the BOM, get the hex core printed as just the little separate pieces (you can see me labeling them in the timelapse), disassemble the cube, and glue on the printed parts so the final product looks like a hex core, but also turns like a 3x3, _just like the actual hex core does in the show_, so it's even cooler!!
+
+First thing I did was figure out the geometry of the underlying "3x3" in the hex core. I did some really messy calculations to figure out the chamfer amount and piece size based on the size of the cube and the margin I wanted.
+
+![Really messy calculations](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/WlipWVmF6UnTGNkVVXdowr37dB4xoM3o/ebdb2da935d8fe81b9e43e1377fda4fa558842bf11fba42136e429403d8acb33.png)
+
+Then I modeled a simple cube core in CAD based on the dimensions I'd figured out, just to get an idea of what the cube would look like before I glued on the decorations (and to make sure the dimensions were right).
+
+![Core model](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/WlipWVmF6UnTGNkVVXdowr37dB4xoM3o/9c7a7189a528431b0be117df1c380ab0d3fed3d685ee20bd11b5498965ad1162.png)
+
+I identified two types of pieces I needed to model, square pyramid and triangle (they correspond to the differently shaped faces in the model above). The triangle piece would be trivial, so I worked on the square piece, designed a full sketch (took a while, I've never seen so many constraints in one sketch), and finally made the solid. I learnt a lot about Fusion (my CAD software) in the process and regularly had to search up things.
+
+![Square piece sketch](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/WlipWVmF6UnTGNkVVXdowr37dB4xoM3o/0d0192991b7534fe18d864ee85ecb46ae4e783a3d3137634d6b3bbf262953581.png)
+(All the quadrants except the top right have their details mirrored twice from the top right)
+
+![Square piece solid](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/WlipWVmF6UnTGNkVVXdowr37dB4xoM3o/e39272da6c5f95952d0238b3c60ebd77ecd413c1c18da4413a5090e54bd86537.png)
+
+Next, I need to model the triangle pieces and add more details to the square pieces (the glyphs in the original. I'm probably gonna decide/design my own custom symbols/characters to put on there)
 
 [Timelapse](https://lookout.hackclub.com/api/media/3ba40b90-873d-49d0-886f-5b2b1d3a194a/video.mp4)
