@@ -27,7 +27,7 @@ make it static due to time constraints and me underestimating the complexity inv
 
 ## Images
 
-### Pieces
+### Parts
 
 | | | |
 | - | - | - |
@@ -35,3 +35,11 @@ make it static due to time constraints and me underestimating the complexity inv
 | Triangle Piece | ![Triangle Piece](images/triangle.png) | ![Triangle Piece Top](images/triangle_top.png) |
 | Square Piece | ![Square Piece](images/square.png) | ![Square Piece Top](images/square_top.png) |
 | Build | ![Build](images/build.png) | ![Build Side](images/build_side.png) |
+
+## BOM
+
+Item  | Description  | Quantity  | Source  | Cost  | Amount
+--- | --- | --- | --- | --- | ---
+Print  |  The 3D print  |  1  |  [Printing Legion](https://printlegion.hackclub.com/)  |  $10.00  |  $10.00
+Estimated total shipping  |  -  |  1  |  -  |  -  |  $10.00
+TOTAL  |  |  |  |  |  $20.00
